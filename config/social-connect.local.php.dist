@@ -1,0 +1,41 @@
+<?php
+// Copy this file to "config/autoload/social-connect.local.php"
+return array(
+//SocialConnect
+    'social-connect' => array(
+        // Facebook settings here
+        'facebook' => array(
+            'app_secret'     => '',
+            'app_id'         => '',
+            'extended_token' => true,
+            'permissions'    => array(
+                'email', 'user_about_me'
+            ),
+            'return_url' => array(
+                'routeName' => '',
+                'params'    => array(
+                    'controller' => '',
+                    'action'     => ''
+                )
+            ),
+        ),
+
+        // Google settings here
+        'google' => array(
+            'client_secret' => '',
+            'client_id'     => ''
+        ),
+
+        // Twitter settings here
+        'twitter' => array(
+            'consumer_secret' => '',
+            'consumer_key'     => ''
+        ),
+
+        // Linkedin settings here
+        'linkedin' => array(
+            'api_secret' => '',
+            'api_key'     => ''
+        )
+    )
+);
