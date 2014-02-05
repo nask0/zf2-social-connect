@@ -1,0 +1,35 @@
+{
+    "name": "nask0/zf2-social-connect",
+    "description": "Module for ZF2 which allows the developer to implement Facebook. Twitter, Google and Linked in connect using their own database storage for the user.",
+    "type": "zf-module",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "facebook",
+        "twitter",
+        "google",
+        "linkedin",
+        "connect",
+        "zf2",
+        "module"
+    ],
+    "homepage": "https://github.com/middleout/third-party-connect",
+    "authors": [
+        {
+            "name": "Atanas Beloborodov",
+            "email": "nask0@cod3r.net"
+        }
+    ],
+    "require": {
+        "php" : ">=5.3.3",
+        "zendframework/zendframework" : "2.*",
+        "facebook/php-sdk" : "3.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "SocialConnect": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
